@@ -1,0 +1,9 @@
+build/
+node_modules
+.vscode
+.DS_Store
+.idea
+
+npm-shrinkwrap.json
+package-lock.json
+yarn.lock

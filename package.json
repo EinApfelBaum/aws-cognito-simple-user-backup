@@ -1,0 +1,42 @@
+{
+  "name": "aws-cognito-simple-user-backup",
+  "version": "1.3.2",
+  "description": "Simple app to load all users of a user pool and save it to a json file.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf ./node_modules && rm package-lock.json && echo Cleanup done.",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/cli/cli.ts"
+  },
+  "keywords": [
+    "cognito",
+    "cognito-user-pool",
+    "backup",
+    "aws",
+    "aws-cognito",
+    "typescript",
+    "amazon-cognito"
+  ],
+  "bugs": {
+    "url": "https://github.com/EinApfelBaum/aws-cognito-simple-user-backup/issues"
+  },
+  "author": {
+    "name": "Folke Baum",
+    "email": "info@baum.software"
+  },
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "devDependencies": {
+    "@types/node": "^17.0.14",
+    "@types/yargs": "^17.0.8",
+    "ts-node": "^10.4.0",
+    "typescript": "4.5.5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.49.0",
+    "yargs": "^17.3.1"
+  }
+}
